@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal student bio website showcasing experience and portfolio">
+  <title>Student Bio - Home</title>
+  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Student Bio</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="page2.html" class="nav-link">Experience</a>
+        <a href="page3.html" class="nav-link">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid grid-cols-3 items-start">
+      <!-- Profile Photo -->
+      <div>
+        <div class="profile-image bg-gray-100 flex items-center justify-center">
+          <p class="text-gray-500 text-center">Professional Headshot<br>(Coming Soon)</p>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="col-span-2">
+        <div class="relative h-64 rounded-xl overflow-hidden mb-8">
+          <img 
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200&h=400"
+            alt="Developer workspace"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-blue-900/70 flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-white text-center">
+              Software Developer Portfolio
+            </h1>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="card">
+          <h2 class="section-title">Contact Information</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="lucide-phone text-blue-900"></i>
+                <span>(780) 555-0123</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="lucide-mail text-blue-900"></i>
+                <span>owtplayd@gmail.com</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="lucide-map-pin text-blue-900"></i>
+                <span>3673 332 Garlstrove drive</span>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="lucide-facebook text-blue-900"></i>
+                <a href="#" class="text-blue-600 hover:underline">@BrianEcheozo</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="lucide-instagram text-blue-900"></i>
+                <a href="#" class="text-blue-600 hover:underline">@Chez2vibey</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Portfolio Images -->
+    <div class="grid grid-cols-2 gap-8 mt-8">
+      <div class="portfolio-image workspace bg-gray-100 flex items-center justify-center">
+        <p class="text-gray-500 text-center">Coding Workspace Setup<br>(Coming Soon)</p>
+      </div>
+      <div class="portfolio-image project bg-gray-100 flex items-center justify-center">
+        <p class="text-gray-500 text-center">Project Screenshot<br>(Coming Soon)</p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="card mt-8">
+      <h2 class="section-title">Professional Skills</h2>
+      
+      <div class="grid grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="subsection-title">Communication & Collaboration</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Clear technical communication</li>
+            <li>Active listening</li>
+            <li>Cross-functional team collaboration</li>
+            <li>Remote team coordination</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="subsection-title">Problem-Solving & Analysis</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Analytical thinking</li>
+            <li>Creative problem-solving</li>
+            <li>Debugging mindset</li>
+            <li>Attention to detail</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="subsection-title">Project Management</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Time management</li>
+            <li>Task prioritization</li>
+            <li>Adaptability</li>
+            <li>Meeting deadlines</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="subsection-title">Learning & Growth</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Continuous learning</li>
+            <li>Knowledge sharing</li>
+            <li>Receptive to feedback</li>
+            <li>Technical curiosity</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skill Paragraphs -->
+      <div class="space-y-6">
+        <p class="para-1">
+          My journey in software development has been marked by a strong foundation in analytical thinking and problem-solving. The ability to break down complex challenges into manageable components has been crucial in tackling diverse programming projects.
+        </p>
+        
+        <p class="para-2">
+          Communication plays a vital role in my work style. Whether collaborating with team members or explaining technical concepts to stakeholders, I prioritize clear and effective communication to ensure project success and team alignment.
+        </p>
+        
+        <p class="para-3">
+          Continuous learning is at the core of my professional philosophy. The ever-evolving nature of technology demands adaptability and a growth mindset, which I demonstrate through regular skill updates and openness to new methodologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="card mt-8">
+      <h2 class="section-title">Education</h2>
+      <div class="space-y-6">
+        <div class="timeline-item">
+          <div class="text-xl font-semibold text-blue-800">Northwestern Polytechnic</div>
+          <div class="text-gray-600">2020 - 2024</div>
+          <div class="text-gray-700">Computer Science</div>
+          <div class="text-gray-600">Grande Prairie, Alberta</div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="text-xl font-semibold text-blue-800">International College of Manitoba</div>
+          <div class="text-gray-600">2018 - 2019</div>
+          <div class="text-gray-700">Foundation Studies</div>
+          <div class="text-gray-600">Manitoba</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="card mt-8">
+      <h2 class="section-title">Technical Expertise</h2>
+      
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Core Disciplines -->
+        <div>
+          <h3 class="subsection-title">
+            <i class="lucide-code"></i>
+            Core Disciplines
+          </h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Full-stack Web Development</li>
+            <li>Object-Oriented Programming</li>
+            <li>Database Management</li>
+            <li>API Development</li>
+            <li>Software Testing & Debugging</li>
+            <li>Agile Development Methodologies</li>
+          </ul>
+        </div>
+
+        <!-- Programming Languages -->
+        <div>
+          <h3 class="subsection-title">
+            <i class="lucide-terminal"></i>
+            Programming Languages
+          </h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <div class="w-24">Python</div>
+              <div class="text-sm text-gray-600">Intermediate</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-24">JavaScript</div>
+              <div class="text-sm text-gray-600">Advanced</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-24">Java</div>
+              <div class="text-sm text-gray-600">Intermediate</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-24">C++</div>
+              <div class="text-sm text-gray-600">Intermediate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="mt-8">
+        <h3 class="subsection-title">
+          <i class="lucide-book-open"></i>
+          Certifications
+        </h3>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <div class="font-semibold">AWS Certified Cloud Practitioner</div>
+            <div class="text-sm text-gray-600">2023</div>
+          </div>
+          <div class="cert-item">
+            <div class="font-semibold">MongoDB Certified Developer Associate</div>
+            <div class="text-sm text-gray-600">2023</div>
+          </div>
+          <div class="cert-item">
+            <div class="font-semibold">Google IT Automation with Python</div>
+            <div class="text-sm text-gray-600">2022</div>
+          </div>
+          <div class="cert-item">
+            <div class="font-semibold">CompTIA Security+</div>
+            <div class="text-sm text-gray-600">2023</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Human Languages -->
+      <div class="mt-8">
+        <h3 class="subsection-title">Human Languages</h3>
+        <div class="flex items-center gap-2">
+          <div class="font-medium">English</div>
+          <div class="text-sm text-gray-600">(Native)</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Navigation Controls -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
+    <i class="lucide-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Student Bio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
