@@ -15,11 +15,12 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
-      <a href="index.html" class="nav-brand">Student Bio</a>
+      <a href="index.html#home" class="nav-brand">Student Bio</a>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="page2.html" class="nav-link">Experience</a>
-        <a href="page3.html" class="nav-link">Portfolio</a>
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="page2.html#experience" class="nav-link">Experience</a>
+        <a href="page3.html#portfolio" class="nav-link">Portfolio</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
@@ -27,33 +28,113 @@
   <!-- Main Content -->
   <main class="container">
     <div class="space-y-8">
-      <h1 class="section-title">Experience</h1>
-      <p class="text-lg text-gray-700">
-        Content coming soon...
-      </p>
-      <div>
-        <h2 class="subsection-title">Related Projects</h2>
-        <a href="page3.html#project1" class="text-blue-600 hover:underline block">
-          View Project 1
-        </a>
-        <a href="page3.html#project2" class="text-blue-600 hover:underline block">
-          View Project 2
-        </a>
-      </div>
+      <!-- Experience Section -->
+      <section id="experience">
+        <h1 class="section-title">Experience</h1>
+        <p class="text-lg text-gray-700">
+          My professional experience spans various projects in software development, problem-solving, and team collaboration. I've worked on API development, full-stack web projects, and database management with a focus on delivering quality results.
+        </p>
+      </section>
+
+      <!-- Hobbies Section -->
+      <section id="hobbies">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="space-y-6">
+          <!-- Hobby 1 -->
+          <div>
+            <h3 class="subsection-title">Photography</h3>
+            <p class="text-gray-700">
+              Capturing moments through my camera lens is one of my passions. I enjoy landscape and portrait photography, often experimenting with light and perspective.
+            </p>
+            <a href="https://unsplash.com" target="_blank" class="text-blue-600 hover:underline">
+              Explore some of my inspirations here.
+            </a>
+          </div>
+
+          <!-- Hobby 2 -->
+          <div>
+            <h3 class="subsection-title">Gaming</h3>
+            <p class="text-gray-700">
+              Gaming allows me to unwind and sharpen my strategic thinking. I enjoy playing open-world RPGs and competitive multiplayer games with friends.
+            </p>
+            <a href="https://store.steampowered.com/" target="_blank" class="text-blue-600 hover:underline">
+              Check out some of my favorite games here.
+            </a>
+          </div>
+
+          <!-- Hobby 3 -->
+          <div>
+            <h3 class="subsection-title">Blogging</h3>
+            <p class="text-gray-700">
+              I run a blog where I share my thoughts on technology trends, personal growth, and creative writing. Blogging is a way for me to connect with like-minded individuals.
+            </p>
+            <a href="https://medium.com/" target="_blank" class="text-blue-600 hover:underline">
+              Visit my blog inspirations here.
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
   <!-- Navigation Controls -->
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
-    <i class="lucide-chevron-up"></i>
-  </button>
+  <div class="navigation-controls">
+    <a href="index.html" class="button-link">Home</a>
+    <a href="page3.html#portfolio" class="button-link">Portfolio</a>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
+      Back to Top
+    </button>
+    <button onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" class="scroll-bottom">
+      Scroll to Bottom
+    </button>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2024 Student Bio. All rights reserved.</p>
-    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-blue-600 hover:underline block">
-      Back to top
-    </a>
   </footer>
+
+  <!-- Add Styling -->
+  <style>
+    .button-link {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid #0056b3;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #0056b3;
+      border-color: #003f7f;
+    }
+
+    .scroll-top, .scroll-bottom {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid #0056b3;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .scroll-top:hover, .scroll-bottom:hover {
+      background-color: #0056b3;
+      border-color: #003f7f;
+    }
+
+    .navigation-controls {
+      margin: 20px 0;
+      text-align: center;
+    }
+  </style>
 </body>
 </html>

@@ -29,30 +29,31 @@
     <div class="space-y-8">
       <h1 class="section-title">Portfolio</h1>
       <div id="project1" class="scroll-mt-24">
-        <h2 class="subsection-title">Project 1</h2>
+        <h2 class="subsection-title" title="Learn more about Project 1">Project 1</h2>
         <p class="text-lg text-gray-700">Content coming soon...</p>
-        <a href="page2.html#related-experience" class="text-blue-600 hover:underline">
-          View Related Experience
+        <a href="page2.html#favourite-games" class="button-link">
+          Check out some of my favourite games here
         </a>
       </div>
       <div id="project2" class="scroll-mt-24">
         <h2 class="subsection-title">Project 2</h2>
         <p class="text-lg text-gray-700">Content coming soon...</p>
-        <a href="page2.html#related-experience" class="text-blue-600 hover:underline">
-          View Related Experience
-        </a>
       </div>
     </div>
   </main>
 
   <!-- Navigation Controls -->
   <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
-    <i class="lucide-chevron-up"></i>
+    <i class="lucide-chevron-up"></i> Back to Top
   </button>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <p>&copy; 2024 Student Bio. All rights reserved.</p>
+    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-blue-600 hover:underline">Back to Top</a>
+    <a href="#project1">
+      <img src="favicons/arrow.jpg" alt="Go to Project 1" title="Go to Project 1" style="display:block;margin:20px auto;width:50px;height:auto;">
+    </a>
   </footer>
 </body>
 </html>
