@@ -71,7 +71,7 @@ body {
   .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -174,22 +174,26 @@ body {
 }
 
 /* Custom Paragraph Styles */
-.para-1 {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+.paragraph-large, .paragraph-medium, .paragraph-small {
+  border-left: 3px solid red;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.paragraph-large {
+  font-size: 1.5rem;
   color: #2C3E50;
 }
 
-.para-2 {
-  font-family: Georgia, serif;
-  font-size: 18px;
+.paragraph-medium {
+  font-size: 1.25rem;
   color: #34495E;
 }
 
-.para-3 {
-  font-family: Verdana, sans-serif;
-  font-size: 14px;
-  color: #2980B9;
+.paragraph-small {
+  font-size: 1rem;
+  color: #7F8C8D;
 }
 
 /* Additional Images Styles */
