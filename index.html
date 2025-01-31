@@ -1,360 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A personal student bio website showcasing experience and portfolio">
-  <title>Student Bio - Home</title>
-  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Navigation -->
-<nav class="nav">
-  <div class="nav-container">
-    <a href="index.html#home" class="nav-brand">Student Bio</a>
-    <div class="nav-links">
-      <a href="index.html#about" class="nav-link">About</a>
-      <a href="page2.html#experience" class="nav-link">Experience</a>
-      <a href="page3.html#portfolio" class="nav-link">Portfolio</a>
-      <a href="index.html#contact" class="nav-link">Contact</a>
+    <header>
+        <div class="header-content">
+            <img src="images/student-photo.jpg" alt="Student's Photo" class="profile-img" id="IMG1">
+            <h1>Student's CV</h1>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="https://www.nwpolytech.ca/departments/science/" class="menu-button">CS in NWP</a>
+        <a href="https://www.nwpolytech.ca/departments/science/faculty.html" class="menu-button">Faculty&Staff</a>
+        <a href="https://www.nwpolytech.ca/" class="menu-button">NWP Home</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <aside class="aside1">
+            <img src="images/nwp-building.jpg" alt="NWP Building" class="building-photo">
+        </aside>
+
+        <aside class="aside2">
+            <h2>Courses Taken</h2>
+            <ul class="courses-list">
+                <li class="checked">
+                    <img src="images/done.png" alt="Completed" class="status-icon">
+                    <span>Web Development</span>
+                </li>
+                <li>
+                    <img src="images/toDo.png" alt="To Do" class="status-icon">
+                    <span>Database Design</span>
+                </li>
+                <li class="checked">
+                    <img src="images/done.png" alt="Completed" class="status-icon">
+                    <span>Programming Fundamentals</span>
+                </li>
+                <li>
+                    <img src="images/toDo.png" alt="To Do" class="status-icon">
+                    <span>Network Security</span>
+                </li>
+                <li class="checked">
+                    <img src="images/done.png" alt="Completed" class="status-icon">
+                    <span>Software Engineering</span>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="section1">
+                <h2>Personal Skills and Qualities</h2>
+                <ul>
+                    <li>Strong problem-solving abilities</li>
+                    <li>Excellent communication skills</li>
+                    <li>Team player with leadership experience</li>
+                    <li>Quick learner and adaptable</li>
+                </ul>
+            </section>
+
+            <section class="section2">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Science in Computer Science</li>
+                    <li>Northwestern Polytechnic University</li>
+                    <li>Expected Graduation: 2024</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="aside3">
+            <a href="https://www.nwpolytech.ca/">
+                <img src="images/nwp-building-2.jpg" alt="NWP Building" id="IMG2">
+            </a>
+        </aside>
     </div>
-  </div>
-</nav>
-  
-  <!-- Scroll to Bottom Button -->
-  <button class="scroll-to-bottom-btn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">
-    Scroll to Bottom
-  </button>
-  
-  <!-- Add Styling -->
-  <style>
-    .scroll-to-bottom-btn {
-      position: fixed;
-      top: 80px; /* Adjust as needed */
-      right: 20px; /* Matches the back-to-top button position */
-      background-color: #007BFF; /* Same as the back-to-top button */
-      color: white;
-      padding: 10px 20px;
-      border: 2px solid #0056b3; /* Same border style */
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      z-index: 1000;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-    }
-  
-    .scroll-to-bottom-btn:hover {
-      background-color: #0056b3; /* Hover effect matching the back-to-top button */
-      border-color: #003f7f;
-    }
-  </style>
 
-<!-- Main Content -->
-<main class="container">
-  <div class="grid grid-cols-3 items-start">
-    <!-- Profile Photo -->
-    <div class="profile-image-container">
-      <img src="images/Profile_image.jpg" alt="Professional Headshot" class="profile-image image-bordered-red" />
-    </div>
-  </div>
-</main>
-
-<!-- Add Styling -->
-<style>
-  .profile-image-container {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    overflow: hidden; /* Ensures the image is cropped */
-    border-radius: 50%; /* Optional: Creates a circular crop */
-    margin: auto; /* Centers the container */
-  }
-
-  .profile-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image fills the container while cropping */
-    display: block;
-  }
-</style>
-
-      <!-- Hero Content -->
-<div id="home" class="col-span-2">
-  <div class="relative h-64 rounded-xl overflow-hidden mb-8">
-    <img 
-      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200&h=400"
-      alt="Developer workspace"
-      class="w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 bg-blue-900/70 flex items-center justify-center">
-      <h1 class="text-4xl font-bold text-white text-center">
-        Software Developer Portfolio
-      </h1>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <section id="contact" class="card">
-    <h2 class="section-title">Contact Information</h2>
-    <div class="grid grid-cols-2 gap-6">
-      <div class="space-y-4">
-        <div class="flex items-center gap-3">
-          <i class="lucide-phone text-blue-900"></i>
-          <span>(780) 555-0123</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <i class="lucide-mail text-blue-900"></i>
-          <span>owtplayd@gmail.com</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <i class="lucide-map-pin text-blue-900"></i>
-          <span>3673 332 Garlstrove drive</span>
-        </div>
-      </div>
-      <div class="space-y-4">
-        <div class="flex items-center gap-3">
-          <i class="lucide-facebook text-blue-900"></i>
-          <a href="#" class="text-blue-600 hover:underline">@BrianEcheozo</a>
-        </div>
-        <div class="flex items-center gap-3">
-          <i class="lucide-instagram text-blue-900"></i>
-          <a href="#" class="text-blue-600 hover:underline">@Chez2vibey</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-    <!-- Portfolio Images -->
-    <div class="grid grid-cols-2 gap-8 mt-8">
-      <!-- Coding Workspace Setup -->
-      <div class="portfolio-image workspace bg-gray-100 flex items-center justify-center">
-        <img src="images/coding-workspace.jpg" alt="Coding Workspace Setup" class="portfolio-img" />
-      </div>
-    
-      <!-- Project Screenshot -->
-      <div class="portfolio-image project bg-gray-100 flex items-center justify-center">
-        <img src="images/project-dashboard.jpg" alt="Project Screenshot" class="portfolio-img" />
-      </div>
-    </div>
-    
-    <!-- Add Styling -->
-    <style>
-      .portfolio-img {
-        width: 100%;
-        height: auto;
-        border: 3px solid #ccc;
-        border-radius: 5px;
-      }
-    </style>
-
-    <!-- Skills Section -->
-    <section class="card mt-8">
-      <h2 class="section-title">Professional Skills</h2>
-      
-      <div class="grid grid-cols-2 gap-8 mb-8">
-        <div>
-          <h3 class="subsection-title">Communication & Collaboration</h3>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Clear technical communication</li>
-            <li>Active listening</li>
-            <li>Cross-functional team collaboration</li>
-            <li>Remote team coordination</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 class="subsection-title">Problem-Solving & Analysis</h3>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Analytical thinking</li>
-            <li>Creative problem-solving</li>
-            <li>Debugging mindset</li>
-            <li>Attention to detail</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 class="subsection-title">Project Management</h3>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Time management</li>
-            <li>Task prioritization</li>
-            <li>Adaptability</li>
-            <li>Meeting deadlines</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3 class="subsection-title">Learning & Growth</h3>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Continuous learning</li>
-            <li>Knowledge sharing</li>
-            <li>Receptive to feedback</li>
-            <li>Technical curiosity</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Skill Paragraphs -->
-      <div class="space-y-6">
-        <p class="para-1">
-          My journey in software development has been marked by a strong foundation in analytical thinking and problem-solving. The ability to break down complex challenges into manageable components has been crucial in tackling diverse programming projects.
-        </p>
-        
-        <p class="para-2">
-          Communication plays a vital role in my work style. Whether collaborating with team members or explaining technical concepts to stakeholders, I prioritize clear and effective communication to ensure project success and team alignment.
-        </p>
-        
-        <p class="para-3">
-          Continuous learning is at the core of my professional philosophy. The ever-evolving nature of technology demands adaptability and a growth mindset, which I demonstrate through regular skill updates and openness to new methodologies.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="card mt-8">
-      <h2 class="section-title">Education</h2>
-      <div class="space-y-6">
-        <div class="timeline-item">
-          <div class="text-xl font-semibold text-blue-800">Northwestern Polytechnic</div>
-          <div class="text-gray-600">2020 - 2024</div>
-          <div class="text-gray-700">Computer Science</div>
-          <div class="text-gray-600">Grande Prairie, Alberta</div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="text-xl font-semibold text-blue-800">International College of Manitoba</div>
-          <div class="text-gray-600">2018 - 2019</div>
-          <div class="text-gray-700">Foundation Studies</div>
-          <div class="text-gray-600">Manitoba</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section class="card mt-8">
-      <h2 class="section-title">Technical Expertise</h2>
-      
-      <div class="grid grid-cols-2 gap-8">
-        <!-- Core Disciplines -->
-        <div>
-          <h3 class="subsection-title">
-            <i class="lucide-code"></i>
-            Core Disciplines
-          </h3>
-          <ul class="list-disc list-inside space-y-2">
-            <li>Full-stack Web Development</li>
-            <li>Object-Oriented Programming</li>
-            <li>Database Management</li>
-            <li>API Development</li>
-            <li>Software Testing & Debugging</li>
-            <li>Agile Development Methodologies</li>
-          </ul>
-        </div>
-
-        <!-- Programming Languages -->
-        <div>
-          <h3 class="subsection-title">
-            <i class="lucide-terminal"></i>
-            Programming Languages
-          </h3>
-          <div class="space-y-3">
-            <div class="flex items-center gap-2">
-              <div class="w-24">Python</div>
-              <div class="text-sm text-gray-600">Intermediate</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="https://www.nwpolytech.ca/departments/science/">CS in NWP</a>
+                    <a href="https://www.nwpolytech.ca/departments/science/faculty.html">Faculty&Staff</a>
+                </div>
+                <div class="footer-column">
+                    <a href="https://www.nwpolytech.ca/">NWP Home</a>
+                    <a href="https://github.com/yourusername">GitHub</a>
+                </div>
             </div>
-            <div class="flex items-center gap-2">
-              <div class="w-24">JavaScript</div>
-              <div class="text-sm text-gray-600">Advanced</div>
+            <div class="social-icons">
+                <a href="#" class="social-icon youtube"></a>
+                <a href="#" class="social-icon instagram"></a>
+                <a href="#" class="social-icon facebook"></a>
             </div>
-            <div class="flex items-center gap-2">
-              <div class="w-24">Java</div>
-              <div class="text-sm text-gray-600">Intermediate</div>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="w-24">C++</div>
-              <div class="text-sm text-gray-600">Intermediate</div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Certifications -->
-      <div class="mt-8">
-        <h3 class="subsection-title">
-          <i class="lucide-book-open"></i>
-          Certifications
-        </h3>
-        <div class="cert-grid">
-          <div class="cert-item">
-            <div class="font-semibold">AWS Certified Cloud Practitioner</div>
-            <div class="text-sm text-gray-600">2023</div>
-          </div>
-          <div class="cert-item">
-            <div class="font-semibold">MongoDB Certified Developer Associate</div>
-            <div class="text-sm text-gray-600">2023</div>
-          </div>
-          <div class="cert-item">
-            <div class="font-semibold">Google IT Automation with Python</div>
-            <div class="text-sm text-gray-600">2022</div>
-          </div>
-          <div class="cert-item">
-            <div class="font-semibold">CompTIA Security+</div>
-            <div class="text-sm text-gray-600">2023</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Human Languages -->
-      <div class="mt-8">
-        <h3 class="subsection-title">Human Languages</h3>
-        <div class="flex items-center gap-2">
-          <div class="font-medium">English</div>
-          <div class="text-sm text-gray-600">(Native)</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Navigation Controls -->
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="scroll-top">
-    <i class="lucide-chevron-up"></i>
-  </button>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <!-- Back to Top Button -->
-      <button 
-        class="back-to-top-btn" 
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        Back to Top
-      </button>
-      <p>&copy; 2024 Student Bio. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Add Styling for Back-to-Top Button -->
-  <style>
-    .back-to-top-btn {
-      display: inline-block;
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 20px;
-      border: 2px solid #0056b3;
-      border-radius: 5px;
-      text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
-    }
-    .back-to-top-btn:hover {
-      background-color: #0056b3;
-      border-color: #003f7f;
-    }
-  </style>
+    </footer>
 </body>
 </html>
