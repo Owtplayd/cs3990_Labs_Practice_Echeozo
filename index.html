@@ -1,89 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student's CV</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+    <title>Student Name CV</title>
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="images/student-photo.jpg" alt="Student's Photo" class="profile-img" id="IMG1">
-            <h1>Student's CV</h1>
-        </div>
+        <h1>Brian Echeozo CV</h1>
+        <img src="Images/profile_pic.jpg" alt="Student Photo" class="profile-photo">
     </header>
 
-    <nav class="menu">
-        <a href="https://www.nwpolytech.ca/departments/science/" class="menu-button">CS in NWP</a>
-        <a href="https://www.nwpolytech.ca/departments/science/faculty.html" class="menu-button">Faculty & Staff</a>
-        <a href="https://www.nwpolytech.ca/" class="menu-button">NWP Home</a>
+    <nav id="menu">
+        <ul>
+            <li><a href="https://www.nwpolytech.ca/departments/science/" id="nwp-button">CS in NWP</a></li>
+            <li><a href="https://www.nwpolytech.ca/departments/science/faculty.html">Faculty & Staff</a></li>
+            <li><a href="https://github.com/Choko16/cs3990_labs_Oractice_Omachonu.git">NWP Home</a></li>
+        </ul>
     </nav>
 
-    <div class="content-wrapper">
-        <aside class="aside1">
-            <img src="images/nwp-building.jpg" alt="NWP Building" class="building-photo">
+    <div class="wrapper">
+        <aside class="asides-left">
+            <aside id="aside1">
+                <img src="Images/nwp_building.jpeg" alt="NWP Building">
+            </aside>
+            <aside id="aside2">
+                <h2>Courses Taken</h2>
+                <ol class="course-list">
+                    <li class="highlight"><span>Web Development</span></li>
+                    <li class="highlight"><span>JavaScript</span></li>
+                    <li class="highlight"><span>Cybersecurity</span></li>
+                    <li class="highlight"><span>Software Engineering</span></li>
+                    <li class="highlight"><span>Programming Paradigms</span></li>
+                </ol>
+            </aside>
+            
         </aside>
 
-        <aside class="aside2">
-            <h2>Courses Taken</h2>
-            <ul class="courses-list">
-                <li class="checked">
-                    <img src="images/done.png" alt="Completed" class="status-icon">
-                    <span>Web Development</span>
-                </li>
-                <li>
-                    <img src="images/toDo.png" alt="To Do" class="status-icon">
-                    <span>Database Design</span>
-                </li>
-            </ul>
-        </aside>
-
-        <main>
-            <section class="section1">
+        <main class="midsection">
+            <section>
                 <h2>Personal Skills and Qualities</h2>
-                <ul>
-                    <li>Problem-solving</li>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
+                <ul class="skills-list">
+                  <li>Strong foundation in programming concepts and software development</li>
+                  <li>Experience with HTML, CSS, and JavaScript for web development</li>
+                  <li>Familiarity with Python and Java for software development projects</li>
+                  <li>Basic knowledge of database management and SQL</li>
+                  <li>Understanding of version control systems like Git and GitHub</li>
+                  <li>Ability to work collaboratively in a team environment</li>
+                  <li>Willingness to learn and adapt to new technologies quickly</li>
+                  <li>Basic knowledge of Agile methodologies and project collaboration tools</li>
+                  <li>Strong analytical thinking and problem-solving skills</li>
+                  <li>Passion for technology and continuous learning</li>
                 </ul>
             </section>
-
-            <section class="section2">
+            
+            <section>
                 <h2>Education</h2>
-                <ul>
-                    <li>BSc in Computer Science</li>
-                    <li>Northwestern Polytechnic University</li>
-                    <li>Expected Graduation: 2024</li>
-                </ul>
+                <div class="education-item">
+                    <h3>Computer Science Technology Diploma</h3>
+                    <p>Northwestern Polytechnic University</p>
+                    <p>Current GPA: 2.8/4.0</p>
+                    <p>Relevant Coursework:</p>
+                    <ul>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Development and Design</li>
+                        <li>Computer Paradigms</li>
+                        <li>Software Engineering Principles</li>
+                        <li>Computer Networks and Security</li>
+                    </ul>
+                </div>
             </section>
         </main>
 
-        <aside class="aside3">
-            <a href="https://www.nwpolytech.ca/">
-                <img src="images/nwp-building-2.jpg" alt="NWP Building" id="IMG2">
-            </a>
+        <aside class="asides-right">
+            <aside id="aside3">
+                <h2>Additional Education</h2>
+                <ul class="to-do">
+                    <li class="planned"><img src="Images/toDo.png" alt="Done" class="todo-icon"> JavaScript Basics</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="To Do" class="todo-icon"> Machine Learning</li>
+                    <li class="completed"><img src="Images/done.png" alt="Done" class="todo-icon"> Data Analysis</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="To Do" class="todo-icon"> Cloud Computing</li>
+                    <li class="completed"><img src="Images/done.png" alt="Done" class="todo-icon"> Web Development</li>
+                    <li class="completed"><img src="Images/done.png" alt="done" class="todo-icon"> Artificial Intelligence</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="Done" class="todo-icon"> Cybersecurity Fundamentals</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="To Do" class="todo-icon"> DevOps Essentials</li>
+                    <li class="completed"><img src="Images/done.png" alt="Done" class="todo-icon"> Mobile App Development</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="To Do" class="todo-icon"> Blockchain Technology</li>
+                    <li class="completed"><img src="Images/done.png" alt="Done" class="todo-icon"> UI/UX Design</li>
+                    <li class="planned"><img src="Images/toDo.png" alt="To Do" class="todo-icon"> Game Development</li>
+                </ul>
+                <img src="Images/nwp_image.jpg" alt="nwp_sign" class="aside3-bottom-image">
+            </aside>
+            
         </aside>
     </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <div class="footer-column">
-                    <a href="https://www.nwpolytech.ca/departments/science/">CS in NWP</a>
-                    <a href="https://www.nwpolytech.ca/departments/science/faculty.html">Faculty & Staff</a>
-                </div>
-                <div class="footer-column">
-                    <a href="https://www.nwpolytech.ca/">NWP Home</a>
-                    <a href="https://github.com/yourusername">GitHub</a>
-                </div>
-            </div>
-            <div class="social-icons">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-            </div>
+        <nav class="footer-links">
+            <a href="https://www.nwpolytech.ca/departments/science/" class="footer-button">CS in NWP</a>
+            <a href="https://www.nwpolytech.ca/departments/science/faculty.html" class="footer-button">Faculty & Staff</a>
+            <a href="https://www.nwpolytech.ca/" class="footer-button">NWP Home</a>
+            <a href="https://github.com/Owtplayd?tab=repositories" class="footer-button">GitHub</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/bib.ugo">
+                <img src="Images/facebook_logo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/chez2vibey/">
+                <img src="Images/instagram_logo.png" alt="instagram" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@saucysenpai3112">
+                <img src="Images/youtube_logo.png" alt="Youtube" class="social-icon">
+            </a>
         </div>
     </footer>
 </body>

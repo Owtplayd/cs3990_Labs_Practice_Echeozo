@@ -1,0 +1,342 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #9c27b0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Navigation Menu */
+nav#menu {
+    background-color: #7b1fa2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
+
+nav#menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    background-color: #ba68c8;
+    border-radius: 12px;
+    display: block;
+    text-align: center;
+}
+
+nav#menu ul li a:hover {
+    background-color: #6a1b9a;
+}
+
+/* Layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "left-aside main right-aside"
+        "education education education";
+    gap: 15px;
+    padding: 20px;
+    padding-bottom: 150px;
+}
+
+.midsection {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Creates space between the two sections */
+}
+
+.midsection section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.asides-left {
+    grid-area: left-aside;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.asides-right {
+    grid-area: right-aside;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+aside {
+    background-color: #d1c4e9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#aside3 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Styling for Aside2 (Course List) */
+#aside2 {
+    background-color: #b39ddb;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: list-counter;
+}
+
+.course-list li {
+    background-color: #9575cd;
+    margin: 5px 0;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Style the number in each list item */
+.course-list li::before {
+    content: counter(list-counter) ".";
+    counter-increment: list-counter;
+    font-weight: bold;
+    background-color: #7e57c2;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;  /* Extend the width to cover the text */
+    text-align: left;  /* Align text to the left */
+    padding-left: 20px;  /* Add some padding for the number */
+}
+
+/* Style for the text */
+.course-list li span {
+    position: absolute;
+    left: 100px;  /* Increased from 80px to move text further to the right */
+    color: white;
+}
+
+.course-list li.highlight {
+    background-color: #673ab7;  /* Darker purple for highlight */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.course-list li.highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Special styling for one highlighted list item */
+.course-list li.highlight {
+    background-color: #673ab7; /* Even darker shade of purple for the selected item */
+}
+
+/* Adjusted Styling for Aside3 (To-Do List) */
+#aside3 {
+    position: relative;  /* For positioning context */
+    padding-bottom: 170px;  /* Add space for the sticky image */
+    background-color: #b39ddb;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.to-do {
+    position: relative;
+    z-index: 2;
+    background-color: #b39ddb;  /* Match the aside background */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.to-do li {
+    padding: 5px 10px;
+    margin: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Add space between icon and text */
+    border-radius: 5px;
+    font-size: 14px;
+    height: 30px;  /* Slightly increased for better spacing */
+}
+
+.todo-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+/* Even and odd list items with different shades */
+.to-do li:nth-child(odd) {
+    background-color: #90caf9;
+}
+
+.to-do li:nth-child(even) {
+    background-color: #64b5f6;
+}
+
+/* Completed items */
+.to-do li.completed {
+    background-color: #bdbdbd;
+    text-decoration: line-through;
+    display: flex;
+    align-items: center;
+}
+
+.to-do li.completed::before {
+    content: none;  /* Remove the checkmark */
+}
+
+/* Planned items */
+.to-do li.planned::after {
+    content: none;  /* Remove the cross */
+}
+
+.aside3-bottom-image {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    position: fixed;  /* Keep it fixed */
+    bottom: 140px;  /* Adjust this value to position above the footer */
+    right: 20px;  /* Position from the right side */
+    object-fit: cover;
+    z-index: 200;  /* Set a high z-index to bring it to the front */
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;  /* This spreads out the content */
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: 10px; /* Space between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-left: 20px; /* Add some left margin for spacing */
+}
+
+.footer-button {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    background-color: #6a1b9a;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Fixed width for buttons */
+    height: 40px; /* Fixed height for buttons */
+}
+
+.footer-button:hover {
+    background-color: #ba68c8;
+}
+
+/* Hover Effects for Footer Links */
+.footer-button:hover {
+    text-decoration: underline;
+}
+
+#aside3 > img {  /* Direct children only */
+    width: 300px;      /* Increased width */
+    height: 150px;     /* Different height for rectangular shape */
+    border-radius: 8px;  /* Changed from 50% to 8px for slight rounding instead of circle */
+    object-fit: cover;   /* This ensures the image fills the space properly */
+}
+
+/* Make sure this doesn't affect the todo icons */
+.todo-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;  /* Add some space from the right edge */
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
